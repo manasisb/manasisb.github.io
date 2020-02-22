@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- English -->
+    <head>
+        <title>Welcome to the TADOBA RESORT CLUB</title>
+        <link rel="stylesheet" href="club.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    </head>
+      <body class = "bodyfelx">
+          <header>
+          <h2>LOGIN</h2>
+        <nav>
+            <ul>
+                <li class="active"><a href ="Login.html">Login Page</a></li>
+                <li><a href ="index.html">Home Page</a></li>
+                <li><a href ="abouttheclub.html">About the club</a></li>
+                <li><a href = "clubactivities.html">Club Activtites</a></li>
+                <li><a href = "club_membership.html">ClubMembership</a></li>
+            </ul>
+        </nav>
+              <h3 id = "demo" ></h3>
+        </header>
+        <form class="box"> 
+            <label for ="email">EmailID:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            
+            <input type="submit" id="button" value="Login">
+        </form>
+        <footer class = "f">
+         <p><span class ="em">&#x1F405</span>Copyright &copy; 2020 ManasiRajiv Weginwar(wa3822)<span class ="em">&#x1F42F</span> </p>
+        </footer>
+    </body>
+     <script>
+    
+        let el1 = document.getElementById("button")
+        function displayemail(){
+            let x = document.getElementById("email").value;
+            let y = document.getElementById("pwd").value;
+            let content = `Email ID is ${x}`;
+                console.log(content);
+            let pass = `Password is ${y}`;
+                console.log(pass);
+        }
+        el1.addEventListener("click", displayemail);
+    </script>
+</html>
