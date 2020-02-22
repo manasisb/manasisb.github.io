@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- English -->
+    <head>
+        <title>Welcome to the TADOBA RESORT CLUB</title>
+        <link rel="stylesheet" href="club.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+        <script src="eventData.js"> </script>
+    </head>
+    <header>
+     <h2 id = "memhead">Apply for Membeership Now!!!</h2>
+        <nav>
+            <ul>
+                <li><a href ="Login.html">Login Page</a></li>
+                <li><a href ="index.html">Home Page</a></li>
+                <li><a href ="abouttheclub.html">About the club</a></li>
+                <li><a href = "clubactivities.html">Club Activtites</a></li>
+                <li class="active"><a href = "club_membership.html">ClubMembership</a></li>
+            </ul>
+        </nav>
+    </header>
+     <body id = "membership">
+         <form class = "membership">
+             
+          <label for ="firstname">FirstName:</label><br>
+          <input type="text" id="firstname" ><br><br>
+             
+          <label for ="email">EmailID:</label><br>  
+          <input type="text" id="emailid" ><br><br>
+           
+           <label for ="Safari Number">Context</label><br>
+           <textarea cols="25" rows="4" id="context" placeholder="Your stuff here"> </textarea><br><br>
+             
+            <label for="skill">Experience</label><br>
+            <select id="skill"><br><br>
+              <option value="Jungle Safari">Jungle Safari</option>
+              <option value="Yoga">Yoga</option>
+              <option value="Cultural Evening">Cultural Evening</option>
+              <option value="Camp Fire">Camp Fire</option>
+            </select><br><br>             
+<!--           <input type="button" id = "apply" value="Apply Now!"><br><br>-->
+             <a href="#ThanksDailog" id = "apply" >Apply Now!</a>
+         </form>
+         
+         <section id = "ThanksDailog" class = "showDialog"> 
+             <p id = "meminfo"></p> 
+                <a href="#" class = "cancel">Close</a>
+<!--              <button onclick="removeElement()" class = "cancel">Close</button>-->
+         </section>
+         
+         <script src = "Thankyoudialog.js"> </script>
+    </body>
+</html>
